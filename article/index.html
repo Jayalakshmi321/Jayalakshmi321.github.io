@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6af3975883.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    <title>Article on C++</title>
+</head>
+<body>
+    <div class="main">
+        <div class="titleimg"><img src="title.png" alt="image"></div>
+        <p>
+            <div class="intro">
+                <h1>About this Article</h1><br>
+                <p>The main motto of this Article is to explain all the concepts related to C++ language and it's applications in real life. So that people can clearly get an idea about this language. Nowadays it's necessary to know all about programming languages if one can able to understand their interest in a particular language they can easily excel it. The first and foremost thing is that we should have some idea on these languages so that you can recognise your interest on a your interested language. </p><br>
+                <h1>C++</h1><br>
+                <h3> 
+                    C++ is known as General purpose language and it's an extension to C language.C++ was developed by Bjarne Stroustrup in the early 1980's. The difference is that C++ is Object Oriented Programming language where as C is not. The basic syntax and structure of the code is almost same. C++ main features are Simple, Machine Independent, Rich library, Fast Execution, Pointers, Object Oriented and many more.<br><br>
+                    <h2>The basic syntax</h2><br>
+                    <code>
+                        #include<iostream><br>
+                        using namespace std;<br>
+                        int main() //program starts here<br>
+                        {<br>
+                            cout<<"Hello World"; //prints hello World<br>
+                            return 0;<br>
+                        }
+                    </code>
+                    <br><br>
+                    <h2>C++ Features</h2><br>
+                    <img src="featuresofc++.jpg" alt="features of c++">
+                </h3>
+            </div>
+            <div class="appli">
+                <h1>Real-Time Applications</h1><br>
+                <h3>
+                    1.Games<br>
+                    2.GUI based Applications<br>
+                    3.Database Software<br>
+                    4.Operating Systems<br>
+                    5.Browsers<br>
+                    6.Compilers<br>
+                    7.Banking Applications<br>
+                    8.Cloud/Distributed Systems<br>
+                    9.Embedded Systems<br>
+                    10.Advanced Computations<br><br>
+                </h3>
+            </div><br>
+            <div class="exp">
+                <h1>Concepts of Object-oriented programming Language:</h1><br><br><br>
+                    <h2><u>Class:</u></h2><br>
+                        A class is a collection of similar types of objects that share common attributes and behavior. A class is defined in C++ using keyword class followed by the name of class.
+                        <br><br>
+                        <h3>Syntax:</h3>Class Classname;
+                        <br><br>
+                            <code>
+                                using namespace std;<br>
+                                class Classname<br>
+                                {<br>
+                                    Access specifier: //can be public,private or protected<br>
+                                    Data members;  //declaring variables<br>
+                                    Member functions() //methods <br>
+                                };
+                            </code><br><br>
+                    <h2><u>Objects:</u></h2><br>
+                        An Object is an instance of a Class. When a class is defined, no memory is allocated but when it is instantiated memory is allocated. Defining Class and Declaring Objects.
+                        <br><br>
+                        <h3>Syntax for object declaration:</h3>Classname Objectname;<br><br>
+                            <code>
+                                Class wish<br>
+                                {<br>
+                                    void display() //method<br>
+                                    {<br>
+                                        cout<<"HI....";<br>
+                                    }<br>
+                                };<br>
+                                int main()<br>
+                                {<br>
+                                    wish obj;  //creating object for wish class<br>
+                                    obj.dispaly(); //calling display method<br>
+                                    return 0;<br>
+                                }
+                            </code><br><br>
+                    <h2><u> Encapsulation:</u></h2><br>
+                        wrapping up of data and information under a single unit. In Object Oriented Programming, Encapsulation is defined as binding together the data and the functions that manipulates them. Encapsulation also lead to data abstraction.
+                        <br><br><br>
+                        <img src="Encapsulation.jpg" alt="encapsulation example">
+                        <br><br><br>
+                    <h2><u>Polymorphism:</u></h2><br>
+                        The same entity behaves different in different scenarios. They can be Function or Object.
+                        <br> There are two types of Polymorphism:<br><br>
+                        <h4>1. Compile Time:</h4><br>
+                            Function overloading means one function can perform many tasks. In C++, a single function is used to perform many tasks with the same name and different types of arguments. In the function overloading function will call at the time of program compilation. It is an example of compile-time polymorphism.
+                        
+                        <br><br>
+                            <code>
+                                class function<br>
+                                {<br>
+                                    public: <br>
+                                    void fun(int x)<br>
+                                    {<br>
+                                        cout<<x<<endl;<br>
+                                    }<br>
+                                    void fun(float x)<br>
+                                    {<br>
+                                        cout<<x<<endl;<br>
+                                    }<br>
+                                    void fun(int x,int y)<br>
+                                    {<br>
+                                        cout<<x<<""<<y;<br>
+                                    }<br>
+                                };
+                            </code><br><br>
+                        <h4>2. Run Time</h4><br>
+                            Method overriding is an example of runtime polymorphism. In method overriding, a subclass overrides a method with the same name as that of in  its superclass. However, in the runtime, JVM figures out the object type and would run the method that belongs to that particular object.
+                            
+                        <br><br>
+                            <code>
+                                class A<br>
+                                {<br>
+                                    public:<br>
+                                    void dispaly()<br>
+                                    {<br>
+                                        cout<<"Hello..I'm in super class"<<endl;<br>
+                                    }<br>
+                                };<br>
+                                class B : public A<br>
+                                {<br>
+                                    public:<br>
+                                    void display()<br>
+                                    {<br>
+                                        cout<<"Hello..I'm in derived class";<br>
+                                    }<br>
+                                };<br>
+                                int main()<br>
+                                {<br>
+                                    B obj;<br>
+                                    obj.display(); //when called display() then derived class method is invoked instead of super class. This is known as Method <br>overriding.<br>
+                                }
+                            </code><br><br>
+                    <h2><u>Abstraction:</u> </h2><br>
+                        It means displaying only essential information and hiding the internal details those not essential. For example consider a car, when we're driving we only concentrate on driving we don't care how internally a break or a stearing works inside. Hiding these kind of unwanted information inorder to simplify is known as "Abstraction".
+                    <br><br>
+
+                    <h2><u>Inheritance:</u> </h2><br>
+                        It's a process in which one object acquires all the properties and behaviors of it's parent object automatically. Class which inherits the members of another class is called derived class and the class whose members are inherited is called base class.
+                    <br>
+                        There are five types of Inheritances:
+                    <br><br>
+                        <h4>1. Single-level Inheritance</h4>
+                            Single class is derived from the parent class<br><br>
+                            Example Program<br><br>
+                            <code>
+                                using namespace std; <br>
+                                class Animal <br>
+                                { <br>
+                                    public:<br>  
+                                    void eat() <br>
+                                    {  <br>
+                                        cout<<"Eating..."<<endl;<br>
+                                    }<br>    
+                                }; <br> 
+                                class Dog: public Animal<br> 
+                                {  <br>
+                                    public: <br> 
+                                    void bark()<br>
+                                    { <br>
+                                    cout<<"Barking...";<br>   
+                                    } <br>   
+                                }; <br>  
+                                int main(void)<br> 
+                                {<br> 
+                                Dog d1;<br>  
+                                d1.eat();<br>  
+                                d1.bark();<br> 
+                                return 0;<br>  
+                                }
+                            </code><br><br>
+                            In the above example from Animal class,class Dog is derived i.e only single class is derived.That's why it's known as "Single Level Inheritance".<br><br>
+                        <h4>2. Multiple Inheritance</h4>
+                            Two or more classes are derived from single class<br><br>
+                            Example Program<br><br>
+                            <code>
+                                // Base class<br>
+                                class MyClass<br> 
+                                {<br>
+                                public:<br>
+                                    void myFunction()<br> 
+                                    {<br>
+                                    cout << "In the base class 1";<br>
+                                    }<br>
+                                };<br>
+
+                                // Another base class<br>
+                                class MyOtherClass<br> 
+                                {<br>
+                                public:<br>
+                                    void myOtherFunction()<br> 
+                                    {<br>
+                                    cout << "In the base class 2";<br>
+                                    }<br>
+                                };<br>
+
+                                // Derived class<br>
+                                class MyChildClass: public MyClass, public MyOtherClass<br> 
+                                {<br>
+                                };<br>
+
+                                int main() <br>
+                                {<br>
+                                MyChildClass myObj;<br>
+                                myObj.myFunction();<br>
+                                myObj.myOtherFunction();<br>
+                                return 0;<br>
+                                }<br>
+                            </code><br>
+                            In the above example we can observe that from more than one base class a derived class is derived.This is known as "Multiple Inheritance"<br><br>
+                        <h4>3. Multilevel Inheritance</h4>
+                            One class derived from the derived class of another class<br><br>
+                            Example Program<br><br>
+                            <code>
+                                // Base class (parent)<br>
+                                class Parent <br>
+                                {<br>
+                                public:<br>
+                                    void myFunction() <br>
+                                    {<br>
+                                    cout<<"Inside parent class";<br>
+                                    }<br>
+                                };<br>
+
+                                // Derived class (child)<br>
+                                class Child: public Parent <br>
+                                {<br>
+                                };<br>
+
+                                // Derived class (grandchild)<br>
+                                class GrandChild: public Child <br>
+                                {<br>
+                                };<br>
+
+                                int main()<br>
+                                {<br>
+                                GrandChild myObj;<br>
+                                myObj.myFunction();<br>
+                                return 0;<br>
+                                }<br>
+                            </code><br>
+                            In the above example we can observe that from base class a class is derived which's known as derived class and from this derived class another class is derived and another class can be derived from this class too..This is known as "Multilevel Inheritance".<br><br>
+                        <h4>4. Hybrid Inheritance</h4>
+                            A class is derived from two or more classes<br><br>
+                            Example Program<br><br>
+                            <code>
+                                class A<br>
+                                {<br>
+                                    .........<br>
+                                };<br>
+                                class B : public A<br>
+                                {<br>
+                                    ..........<br>
+                                };<br>
+                                class C<br>
+                                {<br>
+                                    ...........<br>
+                                };<br>
+                                class D : public B, public C<br>
+                                {<br>
+                                    ...........<br>
+                                };<br><br>
+                            </code>
+                            In the above example we can observe that there's a Single Inheritance as well as Multiple Inheritance so it's a combination of two types of Inheritances. Hence this is called "Hybrid Inheritance".<br><br>
+                        <h4>5. Hierarchical Inheritance</h4>
+                                In the this more than one class is derived from one base class.<br><br>
+                            Example Program<br><br>
+                            <code>
+                                class A // base class<br>
+                                {<br>
+                                    ..............<br>
+                                };<br>
+                                class B : access_specifier A // derived class from A<br>
+                                {<br>
+                                    ...........<br>
+                                } ;<br>
+                                class C : access_specifier A // derived class from A<br>
+                                {<br>
+                                    ...........<br>
+                                } ;<br>
+                                class D : access_specifier A // derived class from A<br>
+                                {<br>
+                                    ...........<br>
+                                } ;<br>
+                            </code><br><br>
+                            In the above example we can observe that more than one class is derived i.e from class A we can see that class B,C,D are derived. Hence it's considered as "Hierarchical Inheritance".<br><br><br>
+                
+                    <h2><u>Memory Management</u></h2><br>
+                        C++ allows us to allocate the memory of a variable or an array in run time.This is known as Dynamic Memory Allocation.In case of Python and Java memory is automatically allocated and deallocated by the compiler but in C++ this is not the case.
+                        The allocation and deallocation of the memory can be done using the new and delete operators respectively.<br><br>
+                    <h2><u>Threading</u></h2><br>
+                        Multithreading is a specialized form of multitasking and multitasking is a feature that allows our system to execute two or more programs concurrently/simultaneously. There are two types of multitasking: process-based and thread-based.
+                    <br>
+                        Process-based multitasking handles the concurrent execution of programs. Thread-based multitasking deals with the multiprogramming of pieces of an equivalent program.<br><br>
+                </h3>
+                <div class="vid">
+                <h1>Wanna learn C++?</h1><br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vLnPwxZdW4Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>    
+        </p>
+    </div>
+    <div class="profile">
+    <img src="profilepic.jpg" alt="writer pic"><br>
+    <span class="contact">
+        <a href="https://www.instagram.com/jayalakshmi_srinivas/" target="blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/jayalakshmi.velugubanti/" target="blank">
+            <i style="color:#3F729B" class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/jaya-lakshmi-velugubanti-2722a0214/" target="blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </span>
+    </div>
+</body>
