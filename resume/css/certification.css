@@ -1,0 +1,60 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.main
+{
+    height:100vh;
+    background: #e0e0e0;
+    font-size: 15px;
+}
+
+.main h1
+{
+    position: absolute;
+    margin-left: 46%;
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Old Standard TT', serif;
+    font-family: 'Source Serif Pro', serif;
+    
+}
+
+.first
+{
+    height:50%;
+    background: #e0e0e0;
+    display: flex;
+    justify-items: space-between;
+}
+
+.second
+{
+    height:50%;
+    background: #e0e0e0;
+    display: flex;
+    justify-items: space-between;
+    margin-top:-20px;   
+}
+
+.c
+{
+    height:300px;
+    width:450px;
+    border-radius:10px;
+    box-shadow:  20px 20px 60px #bebebe,
+           -10px -10px 40px #e6e3e3;
+    margin: 20px;
+    margin-left:35px;
+    margin-top:40px;
+}
+.c:hover
+{
+    box-shadow:  inset 2px 2px 5px #bebebe, inset -5px -5px 10px #e4e4e4;
+}
+
+.c img
+{
+    height:290px;
+    width:440px;
+}

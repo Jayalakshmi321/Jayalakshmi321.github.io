@@ -1,0 +1,176 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+.home
+{
+    overflow: hidden;
+    color:white;
+    height:100vh;
+    width: 100%;
+    display: flex;
+    /* background-image:url('file:///C:/Users/JAYA%20LAKSHMI/Downloads/wave-haikei%20(1).svg'); */
+    background:url("C:/Users/JAYA LAKSHMI/OneDrive/Desktop/resume/images/wave.svg");
+    background-size:contain;
+}  
+
+
+.dashboard
+{
+    width:280px;
+    height:100vh;
+    box-sizing: border-box;
+    background-color: #d6d1c7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    float: left;
+    
+} 
+
+.dash
+{
+    width:280px;
+    height:100vh;
+    box-sizing: border-box;
+    background-color:#d6d1c7;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+} 
+
+
+.c1
+{
+    color:black;
+    box-sizing: border-box;
+    background:#d6d1c7;
+    box-shadow:  6px 6px 12px #aba79f,
+             -6px -6px 12px  #fffbef;
+    height:60px;
+    width:60px;
+    border-radius:50%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fas
+{
+    font-size: 30px;
+    position: absolute;
+}
+
+p{
+    font-size:20px;
+    position: relative;
+    left:90px;
+    width:120px;
+    background-color: rgb(89, 131, 209);
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    visibility: hidden;
+    z-index:10;
+}
+
+
+li{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    list-style: none;
+}
+
+
+p::after
+{
+    z-index:-1;
+    content:"";
+    height:13px;
+    width:13px;
+    left:-3px;
+    background-color: rgb(89, 131, 209);
+    position:absolute;
+    transform:rotate(45deg);
+}
+
+li:hover p{
+    visibility: visible;
+}
+
+.name
+{
+    position: absolute;
+    top:25%;
+    left:30%;
+    font-size:30px;
+    transition:1s;
+    float: right;
+    line-height:60px;
+}
+
+.name h1
+{
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Old Standard TT', serif;
+}
+
+h2
+{
+    font-family: 'Great Vibes', cursive;
+}
+
+.velugubanti
+{
+    position:relative;
+    left:200px;
+    top:10px;
+}
+
+.pic
+{
+    height:400px;
+    width:400px;
+    margin-top: 250px;
+    
+}
+
+.pic img
+{
+    height:300px;
+    width:300px;
+    border-radius:50%;
+    position:absolute;
+    top:120px;
+    right:150px;
+    zoom: 3px;
+}
+
+.contact
+{
+    position: absolute;
+    height:100px;
+    display: flex;
+    margin-left:90%;
+}
+
+.fa
+{
+    height:10px;
+    color:#fffbef;
+    margin:10px;
+    margin-top:30px;
+}
+
+.fa:hover
+{
+    transform: scale(1.2);
+}
